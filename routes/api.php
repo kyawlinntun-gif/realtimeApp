@@ -21,3 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 /* ---------- Start of Questions Routes ---------- */
 Route::apiResource('questions', 'QuestionController');
 /* ---------- End of Questions Routes ---------- */
+
+/* ---------- Start of Categories Routes ---------- */
+Route::apiResource('categories', 'CategoryController');
+/* ---------- End of Categories Routes ---------- */

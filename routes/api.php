@@ -25,3 +25,7 @@ Route::apiResource('questions', 'QuestionController');
 /* ---------- Start of Categories Routes ---------- */
 Route::apiResource('categories', 'CategoryController');
 /* ---------- End of Categories Routes ---------- */
+
+/* ---------- Start of Questions Routes ---------- */
+Route::apiResource('questions/{question}/reply', 'ReplyController');
+/* ---------- End of Questions Routes ---------- */

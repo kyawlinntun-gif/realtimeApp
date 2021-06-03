@@ -29,3 +29,8 @@ Route::apiResource('categories', 'CategoryController');
 /* ---------- Start of Questions Routes ---------- */
 Route::apiResource('questions/{question}/reply', 'ReplyController');
 /* ---------- End of Questions Routes ---------- */
+
+/* ---------- Start of Like and Unlike Routes ---------- */
+Route::post('/like/{reply}', 'LikeController@likeIt');
+Route::delete('/like/{reply}', 'LikeController@unLikeIt');
+/* ---------- End of Like and Unlike Routes ---------- */
